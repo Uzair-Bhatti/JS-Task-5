@@ -62,13 +62,13 @@
 // document.write("random number between 1 and 100 is " + result)
 
 // Q7
-// var userweight = parseInt(prompt("Enter your weight in kilograms"));
+var userweight = parseInt(prompt("Enter your weight in kilograms"));
 
-// if(userweight === 50 || userweight === 50 || userweight === 50.2 || userweight === 50.2) {
-//     alert("Your weight is " + userweight + "kilograms")
-// } else {
-//     alert("Invalid weight. Please use a valid format (e.g., 50, 50kgs, 50.2kgs, 50.2kilograms)")
-// } 
+if(!isNaN(userweight)) {
+    alert("Your weight is " + userweight + "kilograms")
+} else {
+    alert("Invalid weight. Please use a valid format (e.g., 50, 50kgs, 50.2kgs, 50.2kilograms)")
+} 
 
 // Q8
 // var secretNumber = Math.random() * 10;
